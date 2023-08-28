@@ -86,6 +86,7 @@
         "State__c": "MA",
         "Zip__c": "02420",
         "Price__c": 850000,
+        "Price_Sold__c": 835000,
         "Beds__c": 3,
         "Baths__c": 2,
         "Location__Longitude__s": -71.084454,
