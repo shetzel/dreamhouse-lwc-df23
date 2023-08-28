@@ -78,6 +78,22 @@ public with sharing class PropertyController {
         return result;
     }
 
+    @AuraEnabled(cacheable=true scope='global')
+    public static List<Property__c> getBiggestCloser(){
+        List<Property__c> result = [SELECT Broker__r.Name, Price_Sold__c
+                                  FROM Property__c
+                                  WHERE Price_Sold__c > 0
+                                  ORDER BY Price_Sold__c DESC
+                                  LIMIT 1];
+        return result;
+    }
+
+
+    // @AuraEnabled(cacheable=true scope='global')
+    // public static Object getTheBiggestCloser() {
+    //     return [SELECT Broker__r.Name, Price_Sold__c FROM Property__c WHERE Price_Sold__c > 0 ORDER BY Price_Sold__c DESC LIMIT 1];
+    // }
+
     /**
      * Endpoint that retrieves pictures associated with a property
      * @param propertyId Property Id

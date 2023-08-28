@@ -47,6 +47,12 @@
                 <identifier>propertyMap</identifier>
             </componentInstance>
         </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>biggestCloser</componentName>
+                <identifier>biggestCloser</identifier>
+            </componentInstance>
+        </itemInstances>
         <name>right</name>
         <type>Region</type>
     </flexiPageRegions>
