@@ -1,0 +1,11 @@
+<template>
+  <lightning-card title="Top Seller">
+      <template lwc:if={brokerName}>
+        <span style="padding: 1rem">{brokerName}:</span>
+        <span>${priceSold}</span>
+      </template>
+      <template lwc:else>
+          <span>No brokers have sold a house yet</span>
+      </template>
+  </lightning-card>
+</template>

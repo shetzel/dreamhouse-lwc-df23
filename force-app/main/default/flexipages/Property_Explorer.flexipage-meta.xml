@@ -49,8 +49,8 @@
         </itemInstances>
         <itemInstances>
             <componentInstance>
-                <componentName>biggestCloser</componentName>
-                <identifier>biggestCloser</identifier>
+                <componentName>topSeller</componentName>
+                <identifier>topSeller</identifier>
             </componentInstance>
         </itemInstances>
         <name>right</name>
